@@ -10,4 +10,4 @@
 
  - name: Ensure gnome-shell applications are installed
    apt: pkg={{item}}  state={{gnome_shell_pkg_state}}
-   with_items: gnome-shell_apps
+   with_items: gnome_shell_apps
