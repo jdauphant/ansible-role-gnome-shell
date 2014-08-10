@@ -1,6 +1,6 @@
 --- 
  - name: Ensure GDM and gnome-shell are installed
-   apt: pkg={{item}}  state={{gnome-shell_pkg_state}}
+   apt: pkg={{item}}  state={{gnome_shell_pkg_state}}
    with_items:
      - gdm
      - gnome-shell
@@ -9,5 +9,5 @@
      - gnome-shell-extensions
 
  - name: Ensure gnome-shell applications are installed
-   apt: pkg={{item}}  state={{gnome-shell_pkg_state}}
+   apt: pkg={{item}}  state={{gnome_shell_pkg_state}}
    with_items: gnome-shell_apps

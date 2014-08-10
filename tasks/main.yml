@@ -10,5 +10,5 @@
   tags: ["packages", "gnome-shell"]
 
 - name: Ensure gdm is started/stopped
-  service: name=gdm state={{ gnome-shell_service_state }} enabled={{ gnome-shell_service_enabled }}
+  service: name=gdm state={{ gnome_shell_service_state }} enabled={{ gnome_shell_service_enabled }}
   tags: ["service","gdm"]
