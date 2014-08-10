@@ -1,0 +1,21 @@
+---
+gnome-shell_apps: 
+     - bijiben
+     - gnome-clocks 
+     - gnome-weather 
+     - gnome-maps 
+     - gnome-music 
+     - gnome-photos 
+     - gnome-documents 
+     - gnome-contacts
+     - gnome-sushi 
+     - gnome-boxes 
+
+# Package states: installed or latest
+gnome-shell_pkg_state: installed
+
+# Service states: started or stopped
+gnome-shell_service_state: started
+
+# Service enabled on startup: yes or no
+gnome-shell_service_enabled: yes

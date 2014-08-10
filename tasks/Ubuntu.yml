@@ -1,0 +1,6 @@
+---
+ - name: Add ppa repository
+   apt_repository: repo={{item}}
+   with_items:
+     - "ppa:gnome3-team/gnome3"
+     - "ppa:gnome3-team/gnome3-staging"

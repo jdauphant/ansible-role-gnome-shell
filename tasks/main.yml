@@ -1,0 +1,14 @@
+---
+- name: Rules for Ubuntu
+  include: Ubuntu.yml
+  when: ansible_distribution == 'Ubuntu'
+  tags: ["packages", "gnome-shell"]
+
+- name: Rules for Debian OS family
+  include: Debian.yml
+  when: ansible_os_family == 'Debian'
+  tags: ["packages", "gnome-shell"]
+
+- name: Ensure gdm is started/stopped
+  service: name=gdm state={{ gnome-shell_service_state }} enabled={{ gnome-shell_service_enabled }}
+  tags: ["service","gdm"]
