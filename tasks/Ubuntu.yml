@@ -1,6 +1,9 @@
 ---
- - name: Add ppa repository
-   apt_repository: repo={{item}}
-   with_items:
-     - "ppa:gnome3-team/gnome3"
-     - "ppa:gnome3-team/gnome3-staging"
+ - name: Add gnome ppa repository
+   apt_repository: repo="ppa:gnome3-team/gnome3"
+   when: gnome_with_ppa
+
+ - name: Add gnome-shell ppa repository
+   apt_repository: repo="ppa:gnome3-team/gnome3-staging"
+   when: gnome_with_ppa_staging
+

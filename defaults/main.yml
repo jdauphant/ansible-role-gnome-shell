@@ -11,6 +11,9 @@ gnome_shell_apps:
      - gnome-sushi 
      - gnome-boxes 
 
+gnome_with_ppa: true
+gnome_with_ppa_staging: false
+
 # Package states: installed or latest
 gnome_shell_pkg_state: installed
 
