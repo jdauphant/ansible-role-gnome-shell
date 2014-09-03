@@ -1,0 +1,6 @@
+---
+- hosts: localhost
+  remote_user: root
+  roles:
+    - role: ansible-role-gnome-shell
+      gnome_with_ppa_staging: true
