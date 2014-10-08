@@ -4,7 +4,7 @@
    register: gnome_shell_ppa_state
    when: gnome_with_ppa
 
- - name: Add gnome-shell stating ppa repository
+ - name: Add gnome-shell staging ppa repository
    apt_repository: repo="ppa:gnome3-team/gnome3-staging"
    register: gnome_shell_staging_ppa_state
    when: gnome_with_ppa_staging
